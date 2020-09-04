@@ -2,6 +2,7 @@
 // https://github.com/zloirock/core-js/blob/master/docs/2019-03-19-core-js-3-babel-and-a-look-into-the-future.md#babelpolyfill
 import 'core-js/stable'
 import 'regenerator-runtime/runtime'
+import TIM from 'tim-js-sdk'
 
 import Vue from 'vue'
 import App from './App.vue'
@@ -22,7 +23,7 @@ import 'lib-flexible/flexible.js'
 // filters
 import './filters'
 Vue.config.productionTip = false
-
+Vue.prototype.TIM = TIM
 new Vue({
   el: '#app',
   router,
